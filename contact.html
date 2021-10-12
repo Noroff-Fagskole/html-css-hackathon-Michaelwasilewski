@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="app-header">
+
+      <div class="inner">
+      <a href="/" class="app-logo"
+        ><img src="./images/logo.png" alt="CSS Tricks" /></a>
+
+      <nav class="app-navigation">
+       <a href="/"> <i class="fas fa-home color-red"></i>Home</a>
+         <a href="./about.html"><i class="fas fa-address-card color-red"></i>About</a>
+        </i><a href="./contact.html"><i class="fas fa-envelope-square color-red"></i>Contact</a>
+        </i><a href="./signup.html"><i class="fas fa-user-plus color-red"></i>Sign-up</a>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+      <div class="inner">
+      <section>
+        <article class="app-article">
+          <header>
+            <h1>Contact</h1>
+
+           <form action="POST">
+           <fieldset>
+              <legend>Give me your names:</legend><label for="firstName">First Name </label>
+              
+              <input type="text" name="firstName" id="firstName" class="input-text" placeholder="Enter your Name"/>
+              
+              <label for="lastName">Last Name</label>
+              
+              <input type="text" name="lastName" id="lastName" class="input-text" placeholder="Enter your last name" />
+              
+          </fieldset>
+            <fieldset><legend>
+              Give us the precious:
+            </legend><label for="email">Email <span class="color-red">*</label></span>
+            
+            <input type="email" name="email" class="input-text" placeholder="emailex@gmail.com"/>
+            
+            <label for="phone">Phone number <span class="color-red">*</span></label>
+            
+            <input id="number" type="tel" name="number" class="input-text" placeholder="+47 123 43 123"/>
+            <h3>How should we contact you?</h3>
+
+            <label for="Email"><input id="email" type="radio" name="email" value="email"/>Email</label>
+            
+          
+          
+
+          <label for="phone"><input id="phone" type="radio" name="contactYou" value="phone"/>Phone </label>
+           
+           
+
+           
+           
+</fieldset>
+            <fieldset><legend>How can we help you?</legend>  <label for="message">Message</label>
+              
+              <textarea name="message" id="message" class="input-text-area" cols="30" rows="10"></textarea>
+              
+              </fieldset>
+
+            <fieldset><legend>
+              Newsletter
+            </legend>
+            <h5> Subscribe to our newsletter?</h5>
+            <label for="newsletter"> Yes
+              <input type="radio" name="newsletter" value="yes" id="newsletter">
+              No
+              <input type="radio" name="newsletter" value="no" id="newsletter">
+            </label><h5>If Yes:Which categories are you interested in? </h5>
+
+            <label for="JavaScript">
+              JavaScript</label>
+            <input type="checkbox" id="javascript" name="categories" checked/>
+            <label for="css">
+              CSS</label>
+            <input type="checkbox" id="css" name="categories"/>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="categories"/>
+            </label>
+            </fieldset>
+            
+             
+             
+
+             
+             <input type="submit" class="submit" value="Submit">
+
+           </form>
+
+          </header>
+         
+        </article>
+
+        <aside class="app-sidebar">Sidebar</aside>
+      </section>
+    </div>
+    </main>
+
+    <footer>footer</footer>
+  </body>
+</html>

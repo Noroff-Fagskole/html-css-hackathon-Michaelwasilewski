@@ -13,6 +13,21 @@ body {
   line-height: 1.4;
 }
 
+/*
+Mobile: 320px, tablet:767px, desktop: 1024px
+*/
+
+.color-red {
+  color: orangered;
+}
+
+main img {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+
 .app-header {
   border-bottom: 1px solid #999;
   padding-bottom: 1em;
@@ -64,4 +79,46 @@ h1 {
 
 p {
   font-family: "Open Sans", sans-serif;
+}
+
+form {
+  background-color: antiquewhite;
+}
+form fieldset {
+  border: 5px dashed greenyellow;
+  padding: 0.6em 0 1em 1em;
+  background-color: whitesmoke;
+}
+form fieldset legend {
+  font-style: italic;
+  font-size: 2em;
+}
+form label {
+  display: block;
+}
+form h5 {
+  margin-bottom: 5px;
+}
+
+.input-text {
+  width: 90%;
+  border: 1px solid black;
+  padding: 0.5em;
+  color: #666;
+  border-radius: 6px;
+}
+/* too general be more specific use a class instead */
+
+.input-text-area {
+  border-radius: 6px;
+}
+.submit {
+  background-color: rgb(173, 164, 25);
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5em;
+}
+input[type="submit"]:hover {
+  background-color: tomato;
 }
