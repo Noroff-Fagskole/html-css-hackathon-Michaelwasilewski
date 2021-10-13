@@ -71,6 +71,36 @@ a:link, a:visited, a:active, a:hover */
 }
 /*To make the screen 2 colomns on desktop, and 1 colomn on mobile:
 The last 5% is to add padding, border and margin later */
+.app-navigation-drawer{
+  display: block;
+  background: #fff;
+  padding: 0.5em;
+  border-bottom: 2px solid green;
+list-style: none;
+  /*animate: default state on page load*/
+  /*hide nav on load*/
+  transition: all 0.4s linear;
+  transform: translateY(-150%);
+}
+
+
+.sr-only {
+  display: none;
+}
+#hamburger-menu {
+
+
+  /*Hides the checkbox*/
+  display: none;
+}
+#hamburger-menu label {
+  cursor: pointer;
+}
+#hamburger-menu:checked ~ .app-navigation-drawer {
+  /*Show nav on checked*/
+  display: block;
+  transform: translateY(-0%);
+  /* animate into page show state*/
 
 @media screen and (min-width: 767px) {
   .app-article {
@@ -91,6 +121,7 @@ h1 {
   margin-bottom: 0;
   font-family: "Exo 2";
   font-weight: 500;
+  
 }
 
 p {
