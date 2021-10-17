@@ -13,17 +13,24 @@
 
   <body>
     <header class="app-header">
-
       <div class="inner">
       <a href="/" class="app-logo"
         ><img src="./images/logo.png" alt="CSS Tricks" /></a>
 
       <nav class="app-navigation">
-       <a href="/"> <i class="fas fa-home color-red"></i>Home</a>
-         <a href="./about.html"><i class="fas fa-address-card color-red"></i>About</a>
-        </i><a href="./contact.html"><i class="fas fa-envelope-square color-red"></i>Contact</a>
-        </i><a href="./signup.html"><i class="fas fa-user-plus color-red"></i>Sign-up</a>
-      </nav>
+        <label for="hamburger-menu">
+          <span class="sr-only">Hamburger Menu</span>
+          <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="hamburger-menu" />
+
+      <ul class="app-navigation-drawer">
+      
+        <li><a href="/"> <i class="fas fa-home color-red"></i>Home</a></li>
+        <li><a href="./about.html"><i class="fas fa-address-card color-red"></i>About</a></li>
+          <li></i><a href="./contact.html"><i class="fas fa-envelope-square color-red"></i>Contact</a></li>
+            <li></i><a href="./signup.html"><i class="fas fa-user-plus color-red"></i>Sign-up</a></li>
+      </ul></nav>
     </div>
     </header>
 
@@ -107,7 +114,20 @@
          
         </article>
 
-        <aside class="app-sidebar">Sidebar</aside>
+        <aside class="app-sidebar">
+          <figure>
+            <img src="/images/advert-1.png" alt="Advert 1"/>
+            <caption>Sign up to mailchimp</caption>
+          </figure>
+          <figure>
+            <img src="/images/advert-2.png" alt="Advert 2" />
+            <caption>We put the can in kanban</caption>
+          </figure>
+          <figure>
+            <img src="/images/advert-3.png" alt="Advert 3">
+            <caption>HubSpøt</caption>
+          </figure>
+          </aside>
       </section>
     </div>
     </main>

@@ -23,7 +23,7 @@ Mobile: 320px, tablet:767px, desktop: 1024px
 
 main img {
   width: 100%;
-  max-width: 620px;
+
   margin: 0 auto 0 auto;
   display: block;
 }
@@ -48,6 +48,7 @@ main img {
 
 .app-navigation {
   float: right;
+  height: 42px;
 }
 
 /*Links have 4 states: 
@@ -71,25 +72,22 @@ a:link, a:visited, a:active, a:hover */
 }
 /*To make the screen 2 colomns on desktop, and 1 colomn on mobile:
 The last 5% is to add padding, border and margin later */
-.app-navigation-drawer{
+.app-navigation-drawer {
   display: block;
   background: #fff;
   padding: 0.5em;
   border-bottom: 2px solid green;
-list-style: none;
+  list-style: none;
   /*animate: default state on page load*/
   /*hide nav on load*/
   transition: all 0.4s linear;
   transform: translateY(-150%);
 }
 
-
 .sr-only {
   display: none;
 }
 #hamburger-menu {
-
-
   /*Hides the checkbox*/
   display: none;
 }
@@ -100,28 +98,14 @@ list-style: none;
   /*Show nav on checked*/
   display: block;
   transform: translateY(-0%);
-  /* animate into page show state*/
-
-@media screen and (min-width: 767px) {
-  .app-article {
-    display: inline-block;
-    border: 1px solid red;
-    width: 60%;
-  }
-  .app-sidebar {
-    display: inline-block;
-    border: 1px solid green;
-    width: 35%;
-    vertical-align: top;
-  }
 }
+/* animate into page show state*/
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
   font-family: "Exo 2";
   font-weight: 500;
-  
 }
 
 p {
@@ -168,4 +152,42 @@ form h5 {
 }
 input[type="submit"]:hover {
   background-color: tomato;
+}
+
+.footer {
+  background-color: tomato;
+  padding: 1em;
+}
+.footer .column {
+  display: block;
+  width: 20%;
+}
+/* I AM TABLET AND DESKTOP */
+@media screen and (min-width: 767px) {
+  .app-navigation-drawer {
+    transform: translateY(0);
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .app-article {
+    display: inline-block;
+
+    width: 59%;
+  }
+  .app-sidebar {
+    display: inline-block;
+
+    width: 30%;
+    vertical-align: top;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .app-navigation-drawer li {
+    display: inline-block;
+  }
+  .footer .column {
+    display: inline-block;
+    width: 20%;
+  }
 }
